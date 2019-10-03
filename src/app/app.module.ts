@@ -3,14 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { NavComponent } from './nav/nav.component';
+import { MapsComponent } from './maps/maps.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidebarComponent,
+    NavComponent,
+    MapsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyA3jd636bBrRo6a8IZ5LnHtKpjE1aFnmQM'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

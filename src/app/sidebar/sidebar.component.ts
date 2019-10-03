@@ -10,7 +10,7 @@ export class SidebarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $.getScript('../src/assets/js/sidebar.js');
+    $.getScript('src/assets/js/sidebar.js');
 
   }
 
